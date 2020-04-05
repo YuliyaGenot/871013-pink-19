@@ -1,0 +1,49 @@
+.advantages {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+
+}
+.advatages__questions {
+
+  font-size: @f-s-24;
+  font-weight: light;
+  text-align: center;
+  padding: 0;
+  margin: 0 20px;
+  color: @dark;
+}
+.advantages__list {
+  list-style: none;
+  background-color: @grey;
+  padding: 0 20px;
+  padding-bottom: 320px;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+}
+.advantages__item {
+  text-align: center;
+}
+.advantages__title {
+  font-size: @f-s-18;
+  line-height: 24px;
+  font-weight: bold;
+}
+.advantages__description {
+  font-size: @f-s-14;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.advantages__list::after {
+  content: "";
+  width: 157px;
+  height: 320px;
+  position: absolute;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  left: 82px;
+  bottom: -20px;
+  z-index: -1;
+}

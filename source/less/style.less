@@ -1,0 +1,60 @@
+
+
+@dark: #283645;
+@white: #ffffff;
+@black: rgba(0, 0, 0, 0.3);
+@grey: #f2f2f2;
+@light-grey: #e5e5e5;
+@f-s-14: 14px;
+@f-s-18: 18px;
+@f-s-24: 24px;
+
+
+body {
+  font-weight: normal;
+  font-size: 24px;
+  min-width: 320px;
+  margin: 0;
+  z-index: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: "OpenSans", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "page-header.less";
+@import "page-main.less";
+@import "site-list.less";
+@import "link-to-apps.less";
+@import "button.less";
+@import "advantages.less";
+@import "reviews.less";
+@import "font.less";
+@import "rates.less";
+@import "page-footer";
