@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="" width="" height="" alt="Пинк">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.png" width="75" height="22" alt="Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+        <a class="main-nav__button" href="#"><span class="visually-hidden">Открыть меню<span></a>
+        <div class="main-nav__wrapper visually-hidden">
+          <ul class="main-nav__list site-list ">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фотографии</a>
+              <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a href="#">Конкурс</a>
@@ -29,70 +30,106 @@
           </ul>
         </div>
       </nav>
-    </header>
+    </div>
+  </header>
 
     <main class="main-photo">
-      <h2>Фотографии пользователей</h2>
+      <h2 class="main-photo__title">Фотографии пользователей</h2>
       <div class="main-photo__wrapper">
         <section class="user-photo">
-          <h3>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
+          <h3 class="user-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
           <ul class="user-photo__list">
-            <li class="user-photo__item">
-              <img class="user-photo__content user-photo__img" src="#" width="280" height="180">
-              <p class="user-photo__content">Анна (5 минут назад) Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="user-photo__content user-photo__content__like">
+
+            <li class="user-photo__item user-post">
+              <img class="user-post__img panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137">
+              <div class="user-post__wrapper">
+                <span class="user-post__author">Анна</span>
+                <span class="user-photo__time">(5 минут назад)</span>
+                <p class="user-post__content">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="user-post__like">
+                  <a class="user-post__like-link">Нравится: 215</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="user-photo__item user-post">
+              <img class="user-post__img" src="../img/panorama-mobile@1x.jpg" width="320" height="137">
+              <div class="user-post__wrapper">
+                <span class="user-post__author">Левон</span>
+                <span class="user-photo__time">(5 часов назад)</span>
+                <p class="user-post__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="user-post__like">
                 <img src="" width="13" height="12">
                 <a>Нравится:215</a>
+                </div>
               </div>
             </li>
-            <li class="user-photo__item">
-              <img class="user-photo__content user-photo__img" src="#" width="280" height="180">
-              <p class="user-photo__content">Левон (5 часов назад) Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="user-photo__content user-photo__content__like">
-                <img src="" width="13" height="12">
-                <a>Нравится:356</a>
+
+            <li class="user-photo__item user-post">
+              <img class="user-post__img panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137">
+              <div class="user-post__wrapper">
+                <span class="user-post__author">Антон</span>
+                <span class="user-photo__time">(12 часов назад)</span>
+                <p class="user-post__content"> Соседи будут рады!</p>
+                <div class="user-post__like">
+                  <img src="" width="13" height="12">
+                  <a>Нравится:215</a>
+                </div>
               </div>
             </li>
-            <li class="user-photo__item">
-              <img class="user-photo__content user-photo__img" src="#" width="280" height="180">
-              <p class="user-photo__content">Антон (12 часов назад) Соседи будут рады!</p>
-              <div class="user-photo__content user-photo__content__like">
-                <img src="" width="13" height="12">
-                <a>Нравится:666</a>
-              </div>
-            </li>
-            <li class="user-photo__item">
-              <img class="user-photo__content user-photo__img" src="#" width="280" height="180">
-              <p class="user-photo__content">Борис (20 часов назад) Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="user-photo__content user-photo__content__like">
+
+            <li class="user-photo__item user-post">
+              <img class="user-post__img panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137">
+              <div class="user-post__wrapper">
+                <span class="user-post__author">Борис</span>
+                <span class="user-photo__time">(20 часов назад)</span>
+                <p class="user-post__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="user-post__like">
                 <img src="" width="13" height="12">
                 <a>Нравится:215</a>
+                </div>
               </div>
             </li>
-            <li class="user-photo__item">
-              <img class="user-photo__content user-photo__img" src="#" width="280" height="180">
-              <p class="user-photo__content">Сергей (25 часов назад) Самая кубанская в мире!</p>
-              <div class="user-photo__content user-photo__content__like">
+
+            <li class="user-photo__item user-post">
+              <img class="user-post__img" src="../img/panorama-mobile@1x.jpg" width="320" height="137">
+              <div class="user-post__wrapper">
+                <span class="user-post__author">Сергей</span>
+                <span class="user-photo__time">(25 часов назад)</span>
+                <p class="user-post__content"> Самая кубанская в мире!</p>
+                <div class="user-post__like">
                 <img src="" width="13" height="12">
-                <a>Нравится:4</a>
+                <a>Нравится:215</a>
+                </div>
               </div>
             </li>
-            <li class="user-photo__item">
-              <img class="user-photo__content user-photo__img" src="#" width="280" height="180">
-              <p class="user-photo__content">Максим (40 часов назад)Где снег-то?</p>
-              <div class="user-photo__content user-photo__content__like">
+
+            <li class="user-photo__item user-post">
+              <img class="user-post__img panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137">
+              <div class="user-post__wrapper">
+                <span class="user-post__author">Максим</span>
+                <span class="user-photo__time">(40 часов назад)</span>
+                <p class="user-post__content">Где снег-то?</p>
+                <div class="user-post__like">
                 <img src="" width="13" height="12">
-                <a>Нравится:150</a>
+                <a>Нравится:215</a>
+                </div>
               </div>
             </li>
-            <li class="user-photo__item">
-              <img class="user-photo__content user-photo__img" src="#" width="280" height="180">
-              <p class="user-photo__content">Надежда (45 часов назад) Всем GM и взаимные лайки!</p>
-              <div class="user-photo__content user-photo__content__like">
+
+            <li class="user-photo__item user-post">
+              <img class="user-post__img panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137">
+              <div class="user-post__wrapper">
+                <span class="user-post__author">Надежда</span>
+                <span class="user-photo__time">(45 часов назад)</span>
+                <p class="user-post__content">Всем GM и взаимные лайки!</p>
+                <div class="user-post__like">
                 <img src="" width="13" height="12">
-                <a>Нравится:2560</a>
+                <a>Нравится:215</a>
+                </div>
               </div>
             </li>
+
           </ul>
         </section>
       </div>

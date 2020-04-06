@@ -5,6 +5,8 @@
 @black: rgba(0, 0, 0, 0.3);
 @grey: #f2f2f2;
 @light-grey: #e5e5e5;
+@like: #d22856;
+@f-s-12: 12px;
 @f-s-14: 14px;
 @f-s-18: 18px;
 @f-s-24: 24px;
@@ -48,13 +50,15 @@ a {
   text-decoration: none;
 }
 
-@import "page-header.less";
-@import "page-main.less";
-@import "site-list.less";
-@import "link-to-apps.less";
+@import "blocks/page-header.less";
+@import "blocks/page-main.less";
+@import "blocks/site-list.less";
+@import "blocks/link-to-apps.less";
 @import "button.less";
-@import "advantages.less";
-@import "reviews.less";
+@import "blocks/advantages.less";
+@import "blocks/reviews.less";
 @import "font.less";
-@import "rates.less";
-@import "page-footer";
+@import "blocks/rates.less";
+@import "blocks/page-footer";
+@import "blocks/main-photo.less";
+@import "blocks/user-photo.less";
