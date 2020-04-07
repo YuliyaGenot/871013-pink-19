@@ -1,0 +1,57 @@
+@import "blocks/page-header.less";
+@import "blocks/page-main.less";
+@import "blocks/site-list.less";
+@import "blocks/link-to-apps.less";
+@import "button.less";
+@import "blocks/advantages.less";
+@import "blocks/reviews.less";
+@import "font.less";
+@import "blocks/rates.less";
+@import "blocks/page-footer";
+@import "blocks/main-photo.less";
+@import "blocks/user-photo.less";
+
+@dark: #283645;
+@white: #ffffff;
+@black: rgba(0, 0, 0, 0.3);
+@grey: #f2f2f2;
+@light-grey: #e5e5e5;
+@like: #d22856;
+@f-s-12: 12px;
+@f-s-14: 14px;
+@f-s-18: 18px;
+@f-s-24: 24px;
+
+
+body {
+  min-width: 320px;
+  margin: 0;
+  z-index: 0;
+  box-sizing: border-box;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
