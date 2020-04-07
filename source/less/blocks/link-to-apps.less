@@ -16,48 +16,47 @@
 
   list-style: none;
 }
+
 .link-to-apps__item {
   width: 50px;
-
   display: flex;
-
-
 }
+
 .apple-logo,
 .android-logo,
 .microsoft-logo {
   position: relative;
   align-items: baseline;
-
 }
 
 .apple-logo::before {
   content: "";
   position: absolute;
-  background-image: url(../img/logo-apple.svg);
+  background-image: url("../img/logo-apple.svg");
   width: 46px;
   height: 56px;
 }
+
 .android-logo::before {
   content: "";
   position: absolute;
-  background-image: url(../img/logo-android.svg);
+  background-image: url("../img/logo-android.svg");
   width: 43px;
   height: 47px;
 }
+
 .microsoft-logo::before {
   content: "";
   position: absolute;
-  background-image: url(../img/logo-microsoft.svg);
+  background-image: url("../img/logo-microsoft.svg");
   width: 44px;
   height: 41px;
 }
+
 .link-to-apps__content {
 
   font-size: @f-s-14;
-  //*font-family: @font-face;
   font-weight: normal;
   font-style: normal;
   text-align: center;
-
 }
