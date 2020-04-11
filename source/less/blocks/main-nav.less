@@ -1,0 +1,96 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: @black;
+}
+
+.main-nav__wrapper {
+
+  min-width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0;
+}
+
+.main-nav__logo {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.main-nav__logo-image {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__button {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+  background-color: @black;
+  border: none;
+}
+
+.main-nav__button::before {
+  content: "";
+  width: 50px;
+  height: 24px;
+  position: absolute;
+
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 0;
+  right: 0;
+}
+
+.main-nav__closed .main-nav__list {
+  display: none;
+}
+
+.main-nav__opened .main-nav__wrapper {
+  background-color: @dark;
+}
+
+.main-nav__opened .main-nav__list {
+  display: block;
+  background-color: @dark;
+}
+
+.main-nav__opened .main-nav__button::before {
+  background-image: url("../img/icon-menu-cross.svg");
+  width: 24px;
+  height: 23px;
+}
+
+.main-nav__opened .main-nav__button {
+  background-color: @dark;
+  width: 24px;
+  height: 23px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: @black;
+    padding: 0 130px;
+  }
+
+  .main-nav__wrapper {
+    flex-direction: row;
+  }
+
+  .main-nav__closed .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
+}

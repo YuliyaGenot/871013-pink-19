@@ -1,9 +1,10 @@
 .button {
   display: block;
   width: 280px;
-  height: 55px;
+  height: 25px;
   text-align: center;
-
+  padding: 15px;
+  font-weight: bold;
   border: solid 3px;
   border-radius: 35px;
 }
@@ -12,4 +13,11 @@
   color: @white;
   border-color: @white;
   font-size: 18px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .link-to-apps__button {
+    margin: 0;
+  }
 }

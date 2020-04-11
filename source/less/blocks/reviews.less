@@ -14,9 +14,52 @@
   line-height: 30px;
 }
 
+.reviews__author-more {
+  display: none;
+}
+
 .reviews__author-content {
   font-size: @f-s-14;
   font-weight: light;
   line-height: 30px;
   color: @dark;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author {
+    order: 2;
+    font-size: @f-s-20;
+  }
+
+  .reviews__author-more {
+    display: block;
+    font-weight: normal;
+    font-size: @f-s-14;
+  }
+
+  .reviews__author-content {
+    font-size: @f-s-18;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    position: relative;
+  }
+
+  .reviews__wrapper::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+
+    width: 79px;
+    height: 65px;
+    top: -50px;
+  }
 }

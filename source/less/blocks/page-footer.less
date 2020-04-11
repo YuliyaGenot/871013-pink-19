@@ -1,13 +1,22 @@
 .page-footer {
-  width: 320px;
+  width: auto;
   padding: 0;
   margin: 0;
 }
 
-.page-footer__contacts {
-  background-image: url("../img/bg-map-mobile@1x.png");
+.page-footer__wrapper {
   width: 320px;
+  margin: 0 auto;
   height: 645px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__contacts {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-footer__title {
@@ -22,6 +31,7 @@
 .page-footer__list {
   list-style: none;
   margin: 0;
+  padding: 0;
   background-color: @white;
 }
 
@@ -29,4 +39,90 @@
   font-size: @f-s-18;
   font-weight: bold;
   margin: 0;
+}
+
+.page-footer__item p,
+.page-footer__item a {
+  color: @like;
+  font-size: @f-s-24;
+  font-weight: normal;
+  padding: 10px;
+  margin: 0;
+}
+
+.footer__bottom {
+  display: none;
+}
+
+.footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 172px;
+}
+
+.footer__social-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 43px;
+  height: 43px;
+  border: 3px solid @lightdark;
+  border-radius: 50%;
+}
+
+.footer__social-button svg {
+  margin: 0 auto;
+  fill: @like;
+}
+
+.footer__social-button:hover {
+  border: 3px solid @dark;
+}
+
+.footer__social-button:focus {
+  opacity: 0.3;
+}
+
+.footer-maker {
+  font-size: @f-s-14;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: auto;
+    margin: 0 50px;
+  }
+
+  .page-footer__wrapper {
+    width: auto;
+    margin: 0 auto;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+
+  .page-footer__title {
+    font-size: @f-s-40;
+  }
+
+  .page-footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+  }
+
+  .page-footer__contacts {
+    min-width: 660px;
+  }
+
+  .page-footer__item {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
 }
