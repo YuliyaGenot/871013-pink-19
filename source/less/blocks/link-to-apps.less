@@ -4,13 +4,6 @@
   text-align: center;
 }
 
-@media (min-width: @tablet-width) {
-  .link-to-apps {
-    background: none;
-    text-align: left;
-  }
-}
-
 .link-to-apps__list {
   display: flex;
   flex-wrap: wrap;
@@ -25,23 +18,10 @@
   list-style: none;
 }
 
-@media (min-width: @tablet-width) {
-  .link-to-apps__list {
-    margin: 0;
-  }
-}
-
 .link-to-apps__item {
   width: 50px;
   height: 57px;
   display: flex;
-}
-
-@media (min-width: @tablet-width) {
-  .link-to-apps__list {
-    margin: 0 20px;
-    padding: 30px;
-  }
 }
 
 
@@ -83,7 +63,7 @@
 .link-to-apps__content {
   margin: 0 auto;
   padding: 20px;
-  width: 280px;
+  width: 240px;
   font-size: @f-s-14;
   font-weight: normal;
   font-style: normal;
@@ -91,6 +71,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .link-to-apps {
+    background: none;
+    text-align: left;
+  }
+
+  .link-to-apps__list {
+    margin: 0 20px;
+    padding: 30px;
+  }
+
   .link-to-apps__content {
     margin: 0;
     font-size: @f-s-18;

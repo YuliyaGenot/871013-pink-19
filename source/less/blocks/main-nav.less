@@ -74,12 +74,20 @@
   height: 23px;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav {
+    min-width: 660px;
+  }
+}
+
+
 @media (min-width: @desktop-width) {
   .main-nav {
     display: flex;
     justify-content: space-between;
     background-color: @black;
-    padding: 0 130px;
+    padding: 0 30px;
+    min-width: 900px;
   }
 
   .main-nav__wrapper {

@@ -1,16 +1,46 @@
 .main-photo {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 }
 
+.main-photo__back-img {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: @dark;
+  background-size: 320px;
+  height: 232px;
+  margin: 0;
+  padding: 0;
+}
 
 .main-photo__title {
   color: @white;
   font-size: @f-s-24;
   font-weight: normal;
-  margin-top: -175px;
+  margin: 0;
   margin-bottom: 45px;
   text-align: center;
   padding: 35px 70px;
+
+}
+
+@media (min-width: @tablet-width) {
+  .main-photo__back-img {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    height: 440px;
+  }
+
+  .main-photo__title {
+    font-size: @f-s-50;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-photo__back-img {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    background-size: auto;
+    height: 394px;
+  }
 }
