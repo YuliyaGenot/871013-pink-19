@@ -1,29 +1,28 @@
 .page-main {
   padding: 0;
   margin: 0;
-  width: 320px;
-  z-index: 0;
-}
+  margin-top: -66px;
 
-.page-main__wrapper {
-  background-color: @dark;
-  color: @white;
-  margin: 0;
-  padding: 0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
+  background-size: 100% 462px;
+  width: auto;
+  position: relative;
+  z-index: -2;
 }
 
 @media (min-width: @tablet-width) {
   .page-main {
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  .page-main__wrapper {
-    margin: 0;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
+    background-size: auto 729px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: auto 853px;
+    margin-top: -110px;
   }
 }

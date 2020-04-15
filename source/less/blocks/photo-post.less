@@ -67,7 +67,7 @@
   display: block;
 }
 
-.button__photo-post__post {
+.photo-post__post {
   margin: 10px auto;
   height: 50px;
   width: 280px;
@@ -75,9 +75,118 @@
   border-color: @like;
 }
 
-.button__photo-post__reset {
+.photo-post__reset {
   margin: 15px auto;
   height: 50px;
   width: 280px;
   opacity: 0.1;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-post__form {
+    display: flex;
+
+    background-color: @grey;
+    padding: 50px 0;
+  }
+
+  .photo-post__wrapper {
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+  }
+
+  .photo-post__list {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-post__item {
+    width: 275px;
+    height: 70px;
+  }
+
+  .photo-post__item input {
+    display: block;
+    margin: 0 auto;
+    width: 202px;
+  }
+
+  .photo-post__item__crop::before {
+    width: 22px;
+    height: 22px;
+    background-size: 22px 22px;
+  }
+
+  .photo-post__item__fill::before {
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/icon-editor-fill-pink.svg");
+    background-size: 24px 22px;
+    top: 0;
+    left: 0;
+  }
+
+  .photo-post__item__contrast::before {
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/icon-editor-contrast-pink.svg");
+    background-size: 16px 16px;
+    opacity: 1;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-post__form {
+    justify-content: space-around;
+    width: 900px;
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  .photo-post__wrapper {
+    width: 410px;
+  }
+
+  .photo-post__list {
+    width: 410px;
+  }
+
+  .photo-post__item {
+    width: 410px;
+    height: 70px;
+  }
+
+  .photo-post__item__crop::before {
+    width: 44px;
+    height: 44px;
+    background-size: 44px 44px;
+  }
+
+  .photo-post__item__fill::before {
+    width: 48px;
+    height: 43px;
+    background-size: 48px 43px;
+  }
+
+  .photo-post__item__contrast::before {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+  }
+
+  .photo-post__button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-post__post,
+  .photo-post__reset {
+    width: 183px;
+    margin: 0;
+  }
 }

@@ -5,6 +5,7 @@
   line-height: 30px;
   text-align: center;
   padding: 40px;
+  margin: 0;
 }
 
 .user-photo__list {
@@ -13,14 +14,24 @@
   padding: 0 20px;
 }
 
-.user-photo__img .panorama {
-  position: relative;
+.user-post__img {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.panorama {
+  max-width: 120%;
+  height: auto;
+  padding: 0;
+  margin: 0 -20px;
 }
 
 .user-post__wrapper {
   background-color: @grey;
   color: @dark;
   padding: 2px 18px;
+  margin: 0;
 }
 
 .user-post__author {
@@ -50,4 +61,10 @@
   line-height: 24px;
   color: @like;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photo__title {
+    font-size: @f-s-18;
+  }
 }

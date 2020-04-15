@@ -7,11 +7,30 @@
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
   width: 172px;
 }
 
 .footer-bottom__maker {
   font-size: @f-s-14;
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+}
+
+.footer-bottom__maker-link {
+  position: relative;
+  margin-right: 32px;
+}
+
+.footer-bottom__maker-link::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 45px;
+  top: 5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     background-color: @white;
-    height: 107px;
+    height: 55px;
     padding: 36px 20px;
   }
 }

@@ -2,19 +2,18 @@
   display: block;
   margin: 0;
   padding: 0;
-  min-width: 300px;
   list-style: none;
 }
 
 .site-list__item {
   display: block;
 
-  height: 63px;
+  height: 53px;
   text-align: center;
 
   box-shadow:
-    0 -1px 0 0 #000000,
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    0 1px 0 0 #000000,
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
 .site-list__item a {
@@ -29,13 +28,10 @@
   .site-list {
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 600px;
-    padding: 10px;
-    margin: 0 20px;
   }
 
   .site-list__item {
-    box-shadow: none;
+    padding: 10px;
   }
 
   .site-list__item a {
@@ -46,10 +42,19 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
+    display: flex;
     flex-wrap: wrap;
+    width: 750px;
     justify-content: space-between;
-    min-width: 500px;
     padding: 10px;
-    margin: 0 20px;
+    margin: 0;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+  }
+
+  .site-list__item .active {
+    box-shadow: 0 2px 0 0 @white;
   }
 }

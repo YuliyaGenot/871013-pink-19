@@ -2,40 +2,41 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav main-nav__closed">
-      <div class="main-nav__wrapper">
-        <a class="main-nav__logo" href="#">
-          <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.png" width="75" height="22" alt="Пинк">
-        </a>
-        <button  type="button" class="main-nav__button"><span class="visually-hidden">Открыть меню</span></button>
-      </div>
-      <ul class="main-nav__list site-list ">
-        <li class="site-list__item">
+    <div class="page-header__wrapper wrapper ">
+      <nav class="main-nav main-nav__closed">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.png" width="75" height="22" alt="Пинк">
+          </a>
+          <button  type="button" class="main-nav__button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="main-nav__list site-list ">
+          <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a>Фотографии</a>
+            <a  class="active">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
+    </div>
   </header>
 
 
     <main class="main-photo">
-      <div class="main-photo__back-img">
-        <h2 class="main-photo__title">Фотографии <br> пользователей</h2>
-      </div>
+      <h2 class="main-photo__title">Фотографии <br> пользователей</h2>
       <div class="main-photo__wrapper">
         <section class="user-photo">
           <h3 class="user-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
@@ -60,8 +61,7 @@
                 <span class="user-photo__time">(5 часов назад)</span>
                 <p class="user-post__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="user-post__like">
-                <img src="" width="13" height="12">
-                <a>Нравится:215</a>
+                  <a>Нравится:215</a>
                 </div>
               </div>
             </li>
@@ -73,7 +73,6 @@
                 <span class="user-photo__time">(12 часов назад)</span>
                 <p class="user-post__content"> Соседи будут рады!</p>
                 <div class="user-post__like">
-                  <img src="" width="13" height="12">
                   <a>Нравится:215</a>
                 </div>
               </div>
@@ -86,8 +85,7 @@
                 <span class="user-photo__time">(20 часов назад)</span>
                 <p class="user-post__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="user-post__like">
-                <img src="" width="13" height="12">
-                <a>Нравится:215</a>
+                  <a>Нравится:215</a>
                 </div>
               </div>
             </li>
@@ -99,8 +97,7 @@
                 <span class="user-photo__time">(25 часов назад)</span>
                 <p class="user-post__content"> Самая кубанская в мире!</p>
                 <div class="user-post__like">
-                <img src="" width="13" height="12">
-                <a>Нравится:215</a>
+                  <a>Нравится:215</a>
                 </div>
               </div>
             </li>
@@ -112,8 +109,7 @@
                 <span class="user-photo__time">(40 часов назад)</span>
                 <p class="user-post__content">Где снег-то?</p>
                 <div class="user-post__like">
-                <img src="" width="13" height="12">
-                <a>Нравится:215</a>
+                  <a>Нравится:215</a>
                 </div>
               </div>
             </li>
@@ -125,8 +121,7 @@
                 <span class="user-photo__time">(45 часов назад)</span>
                 <p class="user-post__content">Всем GM и взаимные лайки!</p>
                 <div class="user-post__like">
-                <img src="" width="13" height="12">
-                <a>Нравится:215</a>
+                  <a>Нравится:215</a>
                 </div>
               </div>
             </li>
@@ -137,27 +132,30 @@
 
         <section class="photo-post">
           <h3 class="photo-post__title">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h3>
-          <div class="photo-post__wrapper">
             <form class="photo-post__form" action="" method="post">
               <img src="img/photo-road-mobile@1x.jpg" width="280" height="374">
-              <ul class="photo-post__list">
-                <li class="photo-post__item photo-post__item__crop active">
-                  <label for="crop" class="visually-hidden">Обрезать</label>
-                  <input  class= "active" type="range" id="crop">
-                </li>
-                <li class="photo-post__item photo-post__item__fill">
-                  <label for="fill" class="visually-hidden">Яркость</label>
-                  <input type="range" id="fill">
-                </li>
-                <li class="photo-post__item photo-post__item__contrast">
-                  <label for="contrast" class="visually-hidden">Контраст</label>
-                  <input type="range" id="contrast">
-                </li>
-              </ul>
-              <button class="button button__photo-post__post" type="submit" name="button">Запостить</button>
-              <button class="button button__photo-post__reset" type="reset" name="button">Отмена</button>
+
+              <div class="photo-post__wrapper">
+                <ul class="photo-post__list">
+                  <li class="photo-post__item photo-post__item__crop active">
+                    <label for="crop" class="visually-hidden">Обрезать</label>
+                    <input  class= "active" type="range" id="crop">
+                  </li>
+                  <li class="photo-post__item photo-post__item__fill">
+                    <label for="fill" class="visually-hidden">Яркость</label>
+                    <input type="range" id="fill">
+                  </li>
+                  <li class="photo-post__item photo-post__item__contrast">
+                    <label for="contrast" class="visually-hidden">Контраст</label>
+                    <input type="range" id="contrast">
+                  </li>
+                </ul>
+                <div class="photo-post__button">
+                  <button class="button photo-post__post" type="submit" name="button">Запостить</button>
+                  <button class="button photo-post__reset" type="reset" name="button">Отмена</button>
+                </div>
+              </div>
             </form>
-          </div>
 
         </section>
 
@@ -165,13 +163,14 @@
     </main>
 
     <footer class="page-photo-footer">
-      <div class="page-photo-footer__wrapper">
-          <a class="page-photo-footer__logo" href="index.html">
-            <img class="page-photo-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк">
-          </a>
-          <ul class="page-photo-footer__list social">
+      <div class="wrapper">
+        <div class="footer-bottom__wrapper">
+          <div class="footer-bottom__logo">
+            <img class="footer-bottom__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк">
+          </div>
+          <ul class="footer-bottom__social social">
             <li class="social__item">
-              <a class="footer__social-button" href="#">
+              <a class="social__button" href="#">
                 <span class="visually-hidden">Твиттер</span>
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                   <g id="W6EeEF_1_">
@@ -183,7 +182,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="footer__social-button" href="#">
+              <a class="social__button" href="#">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                   <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
@@ -191,19 +190,21 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="footer__social-button" href="#">
-                <span class="visually-hidden">Ютюб</span>
+              <a class="social__button" href="#">
+                <span class="visually-hidden">Youtube</span>
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                   <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
                 </svg>
               </a>
             </li>
           </ul>
-          <p class="footer__maker">Разработано
-            <a class="footer__maker-link visually-hidden" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          <div class="footer-bottom__maker">
+            <p>Разработано</p>
+            <a class="footer-bottom__maker-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <span class="visually-hidden">htmlacademy.ru</span>
+            </a>
+          </div>
         </div>
-
       </div>
     </footer>
 
