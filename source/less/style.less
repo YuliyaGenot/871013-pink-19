@@ -7,11 +7,27 @@
 @import "blocks/reviews.less";
 @import "font.less";
 @import "blocks/rates.less";
-@import "blocks/page-footer";
+@import "blocks/footer.less";
+@import "blocks/footer-top.less";
+@import "blocks/footer-bottom.less";
 @import "blocks/main-photo.less";
 @import "blocks/user-photo.less";
+@import "blocks/user-post.less";
+@import "blocks/main-nav.less";
+@import "variables.less";
+@import "blocks/advantages-effect.less";
+@import "blocks/main-img.less";
+@import "blocks/photo-post.less";
+@import "blocks/page-photo-footer.less";
+@import "blocks/social.less";
+@import "blocks/container.less";
+@import "blocks/page-footer.less";
+@import "blocks/panorama.less";
 
+
+@bolddark: #1d2631;
 @dark: #283645;
+@lightdark: rgba(40, 54, 69, 0.1);
 @white: #ffffff;
 @black: rgba(0, 0, 0, 0.3);
 @grey: #f2f2f2;
@@ -20,13 +36,16 @@
 @f-s-12: 12px;
 @f-s-14: 14px;
 @f-s-18: 18px;
+@f-s-20: 20px;
 @f-s-24: 24px;
+@f-s-30: 30px;
+@f-s-40: 40px;
+@f-s-50: 50px;
 
 
 body {
   min-width: 320px;
   margin: 0;
-  z-index: 0;
   box-sizing: border-box;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
@@ -36,6 +55,10 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -48,10 +71,7 @@ img {
   padding: 0;
 
   white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-a {
-  text-decoration: none;
 }

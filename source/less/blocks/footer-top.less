@@ -1,0 +1,79 @@
+.footer-top {
+  width: 100%;
+  background-color: @white;
+}
+
+.footer-top__contacts {
+  position: relative;
+  width: auto;
+  text-align: center;
+}
+
+.footer-top__contacts::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-map-marker.svg");
+  width: 36px;
+  height: 35px;
+  bottom: -150px;
+}
+
+.footer-top__title {
+  font-weight: normal;
+  font-size: @f-s-24;
+  color: @dark;
+  text-align: center;
+  background-color: @white;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.footer-top__list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  background-color: @white;
+}
+
+.footer-top__item {
+  font-size: @f-s-18;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.footer-top__item p,
+.footer-top__item a {
+  color: @like;
+  font-size: @f-s-24;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-top {
+    margin-bottom: 200px;
+  }
+
+  .footer-top__title {
+    font-size: @f-s-40;
+  }
+
+  .footer-top__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    padding: 30px 0;
+  }
+
+  .footer-top__contacts svg {
+    width: 660px;
+    height: 65px;
+  }
+
+  .footer-top__item {
+    width: 240px;
+    margin: 0 auto;
+  }
+}

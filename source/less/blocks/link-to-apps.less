@@ -1,17 +1,19 @@
 .link-to-apps {
-  background-color: @black;
-  padding: 0 20px;
+  background-color: @bolddark;
+  color: @white;
+  text-align: center;
+  .container();
 }
 
 .link-to-apps__list {
   display: flex;
   flex-wrap: wrap;
+
   justify-content: space-between;
 
-
   width: 205px;
-  height: 58px;
-  margin: 0 auto;
+  height: 57px;
+  margin: 20px auto;
   padding: 0;
 
   list-style: none;
@@ -19,8 +21,10 @@
 
 .link-to-apps__item {
   width: 50px;
+  height: 57px;
   display: flex;
 }
+
 
 .apple-logo,
 .android-logo,
@@ -43,6 +47,8 @@
   background-image: url("../img/logo-android.svg");
   width: 43px;
   height: 47px;
+  top: 6px;
+  left: 0;
 }
 
 .microsoft-logo::before {
@@ -51,12 +57,37 @@
   background-image: url("../img/logo-microsoft.svg");
   width: 44px;
   height: 41px;
+  top: 10px;
+  left: 2px;
 }
 
 .link-to-apps__content {
-
+  margin: 0 auto;
+  padding: 0;
+  width: 240px;
   font-size: @f-s-14;
   font-weight: normal;
   font-style: normal;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .link-to-apps {
+    background: none;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+
+  .link-to-apps__list {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .link-to-apps__content {
+    margin: 0;
+    font-size: @f-s-18;
+    width: 320px;
+    padding: 0;
+    font-weight: normal;
+  }
 }
