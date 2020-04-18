@@ -35,15 +35,27 @@
 
 @media (min-width: @tablet-width) {
   .footer-bottom {
+    display: block;
+    width: auto;
+    background-color: @white;
+    margin-top: auto;
+    height: 127px;
+  }
+
+  .footer-bottom__wrapper {
     display: flex;
     justify-content: space-between;
+    .container();
     background-color: @white;
     height: 55px;
-    padding: 36px 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .footer-bottom {
+    height: 197px;
+  }
+
   .footer-bottom__wrapper {
     .container();
   }

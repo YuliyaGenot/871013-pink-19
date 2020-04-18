@@ -1,3 +1,13 @@
+.photo-post {
+  width: 100%;
+}
+
+.photo-post__wrapper-grey {
+  width: 100%;
+  background-color: @grey;
+}
+
+
 .photo-post__title {
   color: @dark;
   font-size: @f-s-14;
@@ -9,10 +19,10 @@
 
 .photo-post__form {
   .container();
+  text-align: center;
 }
 
 .photo-post__wrapper {
-  background-color: @grey;
   padding: 20px;
 }
 
@@ -37,6 +47,7 @@
   background-repeat: no-repeat;
   width: 44px;
   height: 44px;
+  left: 0;
 }
 
 .photo-post__item__fill::before {
@@ -89,9 +100,7 @@
 @media (min-width: @tablet-width) {
   .photo-post__form {
     display: flex;
-
     background-color: @grey;
-    padding: 50px 0;
   }
 
   .photo-post__wrapper {
