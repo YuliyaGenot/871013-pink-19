@@ -10,7 +10,7 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav main-nav__closed">
+        <nav class="main-nav main-nav__opened main-nav__nojs">
           <div class="main-nav__wrapper">
             <a class="main-nav__logo" href="index.html">
               <picture>
@@ -116,11 +116,11 @@
           <ul class="contest-contact__list">
             <li class="contest-contact__item">
               <label for="phone">номер телефона</label>
-              <input class="contest-contact__input" type="number" name="phone" value="phone" placeholder="Номер, пожалуйста">
+              <input class="contest-contact__input" type="number" name="phone" placeholder="Номер, пожалуйста">
             </li>
             <li class="contest-contact__item">
               <label for="email">Адрес почты</label>
-              <input class="contest-contact__input" type="email" name="email" value="email" placeholder="Введите почту*">
+              <input class="contest-contact__input" type="email" name="email" placeholder="Введите почту*">
             </li>
           </ul>
         </fieldset>
@@ -132,20 +132,20 @@
 
             <li class="contest-apps__item">
               <label>Pink для iOS
-              <input  class="contest-apps__input visually-hidden" type="radio" name="ios" value="ios" checked>
+              <input  class="contest-apps__input visually-hidden" type="radio" name="input__apps" value="ios" checked>
               <span class="contest-apps__radio"></span>
               </label>
             </li>
 
             <li class="contest-apps__item">
               <label>Pink для Android
-              <input class="contest-apps__input visually-hidden" type="radio" name="android" value="android">
+              <input class="contest-apps__input visually-hidden" type="radio" name="input__apps" value="android">
               <span class="contest-apps__radio"></span>
               </label>
             </li>
             <li class="contest-apps__item">
               <label>Windows Phone
-              <input  class="contest-apps__input visually-hidden" type="radio" name="windows" value="windows">
+              <input  class="contest-apps__input visually-hidden" type="radio" name="input__apps" value="windows">
               <span class="contest-apps__radio"></span>
               </label>
             </li>
@@ -162,7 +162,7 @@
           <button class="button contest__button" type="submit">Отправить форму</button>
           <div class="contest__notes">
             <span class="star">*</span>
-            <span class="notes"> - обязательные поля</span>
+            <span class="notes"> &#8212; обязательные поля</span>
           </div>
         </div>
       </form>
@@ -218,6 +218,8 @@
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__button');
+
+      navMain.classList.remove('main-nav__nojs');
 
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('main-nav__closed')) {
