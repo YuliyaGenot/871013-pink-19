@@ -24,7 +24,16 @@
 @import "blocks/page-footer.less";
 @import "blocks/panorama.less";
 @import "blocks/tariff.less";
-
+@import "blocks/main-form.less";
+@import "blocks/contest.less";
+@import "blocks/contest-name.less";
+@import "blocks/contest-progress.less";
+@import "blocks/contest-contact.less";
+@import "blocks/contest-apps.less";
+@import "blocks/contest-emotions.less";
+@import "blocks/mixin-input.less";
+@import "blocks/mixin-label.less";
+@import "blocks/container-border.less";
 
 @bolddark: #1d2631;
 @dark: #283645;
@@ -63,7 +72,9 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
