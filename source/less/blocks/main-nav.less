@@ -1,14 +1,16 @@
 .main-nav {
   margin: 0;
   padding: 0;
-  .container();
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .main-nav__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 17px 20px;
+  padding: 9px 20px;
   margin: 0;
 }
 
@@ -46,43 +48,46 @@
   right: 0;
 }
 
-.main-nav__closed .main-nav__list {
+.main-nav__nojs .main-nav__button {
   display: none;
 }
 
-.main-nav__opened .main-nav__wrapper {
-  background-color: @dark;
-  box-shadow:
-    0 1px 0 0 #000000,
-    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
-}
+@media (max-width: 959px) {
+  .main-nav {
+    background-color: @dark;
+  }
 
-.main-nav__opened .main-nav__list {
-  display: block;
-  background-color: @dark;
-}
+  .main-nav__closed .main-nav__list {
+    display: none;
+  }
 
-.main-nav__opened .main-nav__button::before {
-  background-image: url("../img/icon-menu-cross.svg");
-  width: 24px;
-  height: 23px;
-}
+  .main-nav__opened .main-nav__button {
+    background-color: @dark;
+    width: 24px;
+  }
 
-.main-nav__opened .main-nav__button {
-  background-color: @dark;
-  width: 24px;
-  height: 23px;
+  .main-nav__opened .main-nav__button::before {
+    background-image: url("../img/icon-menu-cross.svg");
+    width: 24px;
+    height: 23px;
+  }
+
+  .main-nav__closed {
+    background-color: @black;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     display: flex;
+    flex-direction: row;
     width: 960px;
     justify-content: space-between;
   }
 
-  .main-nav__closed .main-nav__list {
-    display: flex;
+  .main-nav__logo-image {
+    width: 147px;
+    height: 40px;
   }
 
   .main-nav__button {

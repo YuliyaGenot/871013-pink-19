@@ -1,0 +1,89 @@
+.contest-apps {
+  background-color: @grey;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.contest-apps__fieldset {
+  border: none;
+  .container();
+  font-size: @f-s-18;
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-apps__title {
+  color: @like;
+  font-size: @f-s-14;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px;
+  line-height: 18px;
+}
+
+.contest-apps__list {
+  list-style: none;
+}
+
+.contest-apps__item {
+  font-size: @f-s-18;
+  font-weight: normal;
+  margin: 20px 0;
+  margin-left: 90px;
+  position: relative;
+}
+
+.contest-apps__radio {
+  position: absolute;
+  width: 37px;
+  height: 36px;
+  background-color: @white;
+  border: 2px solid @light-grey;
+  border-radius: 50%;
+  left: -77px;
+}
+
+.contest-apps__input:hover + .contest-apps__radio {
+  border: 2px solid @dark;
+}
+
+.contest-apps__input:active + .contest-apps__radio {
+  border: 2px solid @like;
+}
+
+.contest-apps__input:checked + .contest-apps__radio {
+  background-image: url("../img/icon-map-marker.svg");
+}
+
+.contest-apps__input:checked:hover + .contest-apps__radio {
+  border: 2px solid @dark;
+}
+
+.contest-apps__input:checked:active + .contest-apps__radio {
+  border: 2px solid @like;
+}
+
+
+@media (min-width: @tablet-width) {
+  .contest-apps {
+    background-color: @white;
+  }
+
+  .contest-apps__fieldset {
+    .container-border ();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-apps {
+    width: 431px;
+  }
+
+  .contest-apps__fieldset {
+    width: 100%;
+  }
+}

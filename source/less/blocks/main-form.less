@@ -1,7 +1,7 @@
-.page-main {
+.main-form {
   padding: 0;
   margin: 0;
-  margin-top: -66px;
+  margin-top: -80px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center top;
@@ -12,8 +12,22 @@
   z-index: 0;
 }
 
+.main-form__title {
+  color: @white;
+  font-size: @f-s-24;
+  font-weight: normal;
+  text-align: center;
+  padding: 60px 20px;
+  padding-top: 90px;
+  margin: 0;
+}
+
+.main-form__wrapper {
+  background-color: @white;
+}
+
 @media (min-width: @tablet-width) {
-  .page-main {
+  .main-form {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: auto 729px;
     margin-top: -110px;
@@ -21,7 +35,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
+  .main-form {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: auto 853px;
     margin-top: -110px;

@@ -1,0 +1,86 @@
+.contest-progress {
+  background-color: @grey;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.contest-progress__fieldset {
+  border: none;
+  .container();
+  font-size: @f-s-18;
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-progress__title {
+  .mixin-label();
+  text-align: center;
+}
+
+.contest-progress__list {
+  list-style: none;
+}
+
+.contest-progress__item {
+  font-size: @f-s-18;
+  font-weight: normal;
+  margin: 20px 0;
+  margin-left: 90px;
+  position: relative;
+}
+
+.contest-progress__checkbox {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background-color: @white;
+  border: 2px solid @light-grey;
+  left: -77px;
+}
+
+.contest-progress__input:hover + .contest-progress__checkbox {
+  border: 2px solid @dark;
+}
+
+.contest-progress__input:active + .contest-progress__checkbox {
+  border: 2px solid @like;
+}
+
+.contest-progress__input:checked + .contest-progress__checkbox {
+  background-image: url("../img/icon-yes-pink.svg");
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+}
+
+.contest-progress__input:checked:hover + .contest-progress__checkbox {
+  border: 2px solid @dark;
+}
+
+.contest-progress__input:checked:active + .contest-progress__checkbox {
+  border: 2px solid @like;
+}
+
+@media (min-width: @tablet-width) {
+  .contest-progress {
+    background-color: @white;
+  }
+
+  .contest-progress__fieldset {
+    .container-border ();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-progress__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contest-progress__item {
+    width: 200px;
+  }
+}
