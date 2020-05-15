@@ -4,18 +4,21 @@
 
 @media (min-width: @tablet-width) {
   .advantages-effect {
+    display: block;
+  }
+
+  .advantages-effect__grey {
     display: flex;
     justify-content: space-around;
-
     padding: 40px 20px;
   }
 
   .advantages-effect__timer {
     width: 240px;
-    height: 280px;
+    height: 230px;
     position: relative;
-    text-align: center;
-    padding-top: 70px;
+    padding-left: 61px;
+    padding-top: 100px;
   }
 
   .advantages-effect__hour {
@@ -32,8 +35,8 @@
     height: 276px;
     background-image: url("../img/icon-timer.svg");
     background-size: 238px 276px;
-    top: -10px;
-    left: 0;
+    top: 15px;
+    left: -2px;
   }
 
   .advantages-effect__timer::after {
@@ -43,20 +46,27 @@
     height: 172px;
     border: 15px solid @like;
     border-radius: 50%;
-    top: 45px;
-    left: 18px;
+    top: 70px;
+    left: 16px;
   }
 
   .advantages-effect__wrapper {
-    width: 320px;
+    width: 306px;
   }
 
   .advantages-effect__title {
     font-size: @f-s-30;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 50px;
+    margin-right: 30px;
   }
 
   .advantages-effect__content {
     font-size: @f-s-14;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 5px;
   }
 
   .advantages-effect__link {
@@ -67,35 +77,51 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages-effect {
+    padding: 0;
+    background-color: @grey;
+  }
+
+  .advantages-effect__grey {
+    .container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+
   .advantages-effect__hour {
     font-size: 120px;
   }
 
   .advantages-effect__timer {
-    width: 298px;
-    height: 345px;
-    padding-top: 105px;
+    width: 260px;
+    height: 304px;
+    padding-left: 90px;
+    padding-top: 116px;
   }
 
   .advantages-effect__timer::before {
     width: 298px;
     height: 345px;
     background-size: 298px 345px;
-    top: 0;
-    left: 0;
+    top: 9px;
+    left: 10px;
   }
 
   .advantages-effect__timer::after {
-    width: 213px;
-    height: 213px;
+    width: 223px;
+    height: 223px;
     border: 15px solid @like;
     border-radius: 50%;
-    top: 73px;
-    left: 27px;
+    top: 78px;
+    left: 33px;
   }
 
   .advantages-effect__wrapper {
-    width: 525px;
+    width: 550px;
+    padding-top: 47px;
+    padding-left: 26px;
   }
 
   .advantages-effect__title {
@@ -105,6 +131,9 @@
 
   .advantages-effect__content {
     font-size: @f-s-18;
+    line-height: 30px;
+    margin-top: 19px;
+    margin-bottom: 27px;
   }
 
   .advantages-effect__link {

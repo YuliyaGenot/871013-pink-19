@@ -12,7 +12,11 @@
       <nav class="main-nav main-nav__opened main-nav__nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="#">
-            <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.png" width="75" height="22" alt="Пинк">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+            </picture>
           </a>
           <button  type="button" class="main-nav__button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -43,9 +47,9 @@
 
           <div class="user-photo__panorama panorama">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-              <img class="panorama__img" src="img/panorama-mobile@1x.jpg" width="320" height="137">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="panorama__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137">
             </picture>
             <div class="panorama__wrapper">
               <span class="panorama__author">Анна</span>
@@ -61,9 +65,9 @@
 
             <li class="user-photo__item user-post">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                <img class="user-post__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180">
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="user-post__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180">
               </picture>
               <div class="user-post__wrapper">
                 <span class="user-post__author">Левон</span>
@@ -77,9 +81,9 @@
 
             <li class="user-photo__item user-post">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img class="user-post__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="user-post__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180">
               </picture>
 
               <div class="user-post__wrapper">
@@ -94,9 +98,9 @@
 
             <li class="user-photo__item user-post">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img class="user-post__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="user-post__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180">
               </picture>
               <div class="user-post__wrapper">
                 <span class="user-post__author">Борис</span>
@@ -110,9 +114,9 @@
 
             <li class="user-photo__item user-post">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                <img class="user-post__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x,img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="user-post__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180">
               </picture>
               <div class="user-post__wrapper">
                 <span class="user-post__author">Сергей</span>
@@ -126,9 +130,9 @@
 
             <li class="user-photo__item user-post">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                <img class="user-post__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="user-post__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180">
               </picture>
               <div class="user-post__wrapper">
                 <span class="user-post__author">Максим</span>
@@ -142,9 +146,9 @@
 
             <li class="user-photo__item user-post">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                <img class="user-post__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg, 2x">
+                <img class="user-post__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180">
               </picture>
               <div class="user-post__wrapper">
                 <span class="user-post__author">Надежда</span>
@@ -164,7 +168,12 @@
           <h3 class="photo-post__title">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h3>
           <div class="photo-post__wrapper-grey">
             <form class="photo-post__form" action="" method="post">
-              <img src="img/photo-road-mobile@1x.jpg" width="280" height="374">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg, 2x">
+                <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374">
+              </picture>
+
 
               <div class="photo-post__wrapper">
                 <ul class="photo-post__list">

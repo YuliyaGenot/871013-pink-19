@@ -1,6 +1,7 @@
 
 .panorama {
   width: 100%;
+  margin-bottom: 28px;
 }
 
 .panorama__img {
@@ -12,7 +13,8 @@
 }
 
 .panorama__wrapper {
-  width: 280px;
+  width: 250px;
+  padding: 10px;
   margin: 0 auto;
 
   background-color: @grey;
@@ -38,6 +40,7 @@
   line-height: 24px;
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .panorama__like {
@@ -46,11 +49,28 @@
   line-height: 24px;
   color: @like;
   text-transform: uppercase;
+  padding-left: 35px;
 }
 
 @media (min-width: @tablet-width) {
+  .user-photo__panorama img {
+    height: 509px;
+  }
+
   .panorama__wrapper {
-    width: 620px;
+    width: 562px;
+    padding: 24px;
+    padding-left: 21px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .panorama__like {
+    margin-left: 273px;
+  }
+
+  .panorama__content {
+    order: 1;
   }
 }
 

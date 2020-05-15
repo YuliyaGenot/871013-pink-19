@@ -1,13 +1,13 @@
 .advantages {
   padding: 0;
-  padding-top: 20px;
+  padding-top: 15px;
   background-color: @white;
   color: @dark;
 }
 
 .advatages__questions {
   .container ();
-
+  margin-top: 25px;
   font-size: @f-s-24;
   line-height: 30px;
   font-weight: lighter;
@@ -27,8 +27,8 @@
 .advantages__list {
   width: 280px;
   list-style: none;
-  padding: 80px 20px;
-  padding-bottom: 310px;
+  padding: 105px 20px;
+  padding-bottom: 298px;
   margin: 0 auto;
   position: relative;
   z-index: 0;
@@ -37,7 +37,7 @@
 .advantages__item {
   text-align: center;
   padding: 0 10px;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
 .advantages__title {
@@ -71,6 +71,10 @@
   position: absolute;
   background-image: url("../img/iphone-screen-mobile@1x.png");
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
+
   background-size: auto 320px;
   background-repeat: no-repeat;
   left: 80px;
@@ -81,12 +85,13 @@
 @media (min-width: @tablet-width) {
   .advantages {
     width: auto;
+    padding-top: 50px;
   }
 
   .advatages__questions {
     font-size: @f-s-40;
     width: auto;
-    line-height: normal;
+    line-height: 48px;
     padding: 0;
     margin: 0;
   }
@@ -99,12 +104,15 @@
 
   .advantages__list {
     margin: 0;
-    padding: 70px 10px;
+    margin-top: 90px;
     margin-left: auto;
+    padding: 20px;
+    width: 320px;
   }
 
   .advantages__item {
     text-align: left;
+    margin-bottom: 27px;
   }
 
   .advantages__title {
@@ -114,20 +122,35 @@
   .advantages__list::after {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
+
     background-size: 268px auto;
     width: 268px;
     height: 547px;
-    left: -330px;
-    top: 50px;
+    left: -280px;
+    top: -40px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .advatages__questions {
+    font-size: @f-s-50;
+    line-height: 58px;
+  }
+
+  .advantages__wrapper {
+    width: 960px;
+  }
+
   .advantages__list {
     margin: 0;
     margin-top: 400px;
     width: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .advantages__list::after {
@@ -136,41 +159,74 @@
 
   .advantages__item {
     position: relative;
+    width: 265px;
   }
 
   .advantages__item-mood::after {
     display: block;
     content: "";
     position: absolute;
-    width: 246px;
+    width: 277px;
     height: 382px;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    }
+
+    background-size: 292px 302px;
     background-repeat: no-repeat;
-    left: 0;
-    bottom: 200px;
+    left: -6px;
+    bottom: 190px;
   }
 
   .advantages__item-world::after {
     display: block;
     content: "";
     position: absolute;
-    width: 246px;
+    width: 277px;
     height: 382px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
+
+    background-size: 292px 302px;
     background-repeat: no-repeat;
-    left: 0;
-    bottom: 200px;
+    left: -1px;
+    bottom: 190px;
   }
 
   .advantages__item-friends::after {
     display: block;
     content: "";
     position: absolute;
-    width: 246px;
+    width: 277px;
     height: 382px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
+
+    background-size: 292px 302px;
     background-repeat: no-repeat;
-    left: 0;
-    bottom: 200px;
+    left: 2px;
+    bottom: 190px;
+  }
+
+  .advantages__title {
+    font-size: @f-s-30;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .advantages__description {
+    font-size: @f-s-18;
+    line-height: 30px;
+    padding: 10px 15px;
+    text-align: center;
   }
 }
